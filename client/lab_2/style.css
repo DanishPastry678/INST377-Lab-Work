@@ -156,7 +156,7 @@ form {
   font-weight: 600;
 }
 
-.footer a {
+.footer a { 
   color: rgba(255, 224, 138, 1);
   text-decoration: underline;
 }
