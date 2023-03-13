@@ -1,5 +1,43 @@
-<!-- Bring in your successful HTML/CSS from the Flexbox lab -->
-<!-- Your page will need a form in it with an 'action' to /api and a single text field with an id/name of "resto" -->
-<!-- If you open /routes/apiRoutes and go to line 38 you will find the server side answer to your request! -->
 
-<!-- Temporarily unhook your script.js file from your main index file -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anish's Labs for INST377</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Anish's Labs for INST377</h1>
+      </header>
+      <div class="container">
+        <div class="left_section box">
+            <h3>Restaurant Name</h3>
+            <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" method="GET">
+                <div>
+                    <label for="resto">Restaurant Name:</label>
+                    <input type="text" id="resto" name = "resto">
+                </div>
+                <button type="submit">Load Data</button>
+                <button type="button" class = "filter-button">Filter Data</button>
+
+              </form>
+        </div>
+        <div class="right_section box">
+          <h3>Local Resteraunts</h3>
+          <div class="resteraunt list box">A list of local resteraunts</div>
+        </div>
+      </div>
+      <div>
+        <footer class = footer>
+          <a href="http://github.com/DanishPastry678/INST377-Lab-Work" target="_blank" rel="noopener noreferrer">Anish Anburaja's github</a>
+        </footer>
+        
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
