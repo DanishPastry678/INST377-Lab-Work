@@ -7,3 +7,49 @@
 
     Try placing it at the same level in your element tree as your Submit button
 -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anish's Labs for INST377</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Anish's Labs for INST377</h1>
+      </header>
+      <div class="container">
+        <div class="left_section box">
+            <h2>Form Inputs</h2>
+            <form class="box main_form">
+                <button type="button" id="data_load">Load County Data</button>
+                <div>
+                    <label for="resto">Restaurant Name</label>
+                    <input type="text" name="resto" id="resto">
+                </div>
+                <div class="buttons">
+                    <button type="button" class= "filter">Filter Data</button>
+                    <button type="button" class= "generate">Generate List</button>
+                </div>
+            </form>
+        </div>
+        <div class="right_section box">
+            <h2>Local Resteraunt List</h2>
+            <ol class = "box" id = "restaurant_list">
+                A list of local restaurants
+                <div class="lds-ellipis" id = "data_load_animation"><div></div><div></div><div></div><div></div></div><div>
+            </ol>
+         </div>
+    </div>
+     
+        <footer class = footer>
+            <a href="http://github.com/DanishPastry678/INST377-Lab-Work">Anish Anburaja's github</a>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
